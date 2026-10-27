@@ -30,7 +30,7 @@ h2.sec{margin:22px 4px 6px}
 .item b{display:block}.item small{color:var(--sub);display:block}
 .tag{display:inline-block;background:var(--yl);border-radius:8px;padding:0 7px;font-size:.75rem;margin-left:6px;font-weight:700}
 .go{flex:none;text-decoration:none;color:#4a2c38;background:var(--pk);border:2.5px solid var(--line);border-radius:99px;padding:3px 12px;font-size:.82rem;font-weight:700;white-space:nowrap}
-.say{display:flex;gap:12px;align-items:center;background:var(--bl);border:3px solid var(--line);border-radius:22px;padding:10px 14px;margin:14px 0}.say .av{font-size:2.4rem;line-height:1}.say b{color:#4d6b2a}.mascots span{display:inline-block;margin:0 4px;font-size:2rem}.mascots small{display:block;font-size:.65rem;color:var(--sub);letter-spacing:0}.mascots{letter-spacing:0}
+.say{display:flex;gap:12px;align-items:center;background:var(--bl);border:3px solid var(--line);border-radius:22px;padding:10px 14px;margin:14px 0}.say .av{font-size:2.4rem;line-height:1}.say b{color:#4d6b2a}.mascots span{display:inline-block;margin:0 4px;font-size:2rem}.mascots small{display:block;font-size:.65rem;color:var(--sub);letter-spacing:0}.mascots{letter-spacing:0}.f input,.f select{font:inherit;color:inherit;background:var(--card);border:2.5px solid var(--line);border-radius:12px;padding:8px 10px;width:100%;margin:4px 0}.f label{display:inline-flex;gap:6px;align-items:center;margin:4px 10px 4px 0}.f input[type=checkbox]{width:18px;height:18px;margin:0;accent-color:#6bb04a}button.go{font:inherit;font-size:.82rem;font-weight:700;cursor:pointer}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .mini{cursor:pointer;text-align:left;font:inherit;color:inherit;background:var(--pk2);border:2.5px solid var(--line);border-radius:16px;padding:10px}
 .mini b{display:block}
@@ -44,7 +44,7 @@ ul{padding-left:20px;margin:4px 0}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style></head><body><svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".05" numOctaves="2" seed="4"/><feDisplacementMap in="SourceGraphic" scale="3"/></filter></svg><div class="w">
 <header><div class="mascots" aria-hidden="true" id="mh"></div><h1>北九州 四天三夜 自由行</h1>
-<div class="sub">11/26(四) – 11/29(日)・小狗夥伴們陪你走完每一天</div>
+<div class="sub">11/26(四) – 11/29(日)・五位夥伴陪你走完每一天</div>
 <span class="pill" id="jp">🕒 日本現在 --:--</span><span class="pill" id="cd"></span>
 <button class="pill" id="th" style="cursor:pointer;color:inherit;font-family:inherit">🌙 切換深淺</button></header>
 <nav id="nav" aria-label="分頁"></nav><main id="v"></main>
@@ -52,21 +52,21 @@ ul{padding-left:20px;margin:4px 0}
 <script>
 const M=u=>'https://maps.app.goo.gl/'+u;
 const D=[
-{id:'d1',tab:'11/26 小倉',c:[0,'小柴','終於到九州啦!先去旦過市場吃早餐,再慢慢逛小倉城~'],t:'11/26(四) 抵達北九州!小倉一日遊',r:['06:15 抵達機場','機場巴士(7:00/7:20/7:25)','小倉站','寄放行李','旦過市場早餐','魚町銀天街 & 小倉城','飯店 check in','超市買買','晚餐牛腸鍋'],
+{id:'d1',tab:'11/26 小倉',c:[1,'魚子','終於到九州啦!先去旦過市場吃早餐,再慢慢逛小倉城~'],t:'11/26(四) 抵達北九州!小倉一日遊',r:['06:15 抵達機場','機場巴士(7:00/7:20/7:25)','小倉站','寄放行李','旦過市場早餐','魚町銀天街 & 小倉城','飯店 check in','超市買買','晚餐牛腸鍋'],
 S:[['🚌 交通',[['西鐵巴士:北九州機場 → 小倉','機場航廈外 2 號乘車處,到小倉站新幹線口/北口;現場買票或刷 Suica','https://japantravel.navitime.com/zh-tw/area/jp/depArrTimeList/00085590/00085420/00021776?direction=up'],['北九州單軌電車:小倉站 → 旦過站','',M('XwwxXGG3MWuBJxvTA')]]],
 ['🍴 餐廳',[['ハレノヒモーニング','早餐(モーニング専門店)',M('DV2MQpEtS6o5D5gTA')],['生魚片 九州鮪魚','點心?',M('BaC6pkzMBK4H1btJ6')],['鰻魚 田舍庵','午餐',M('Z2ivLh8ycm5roZmq7')],['牛腸鍋田州 小倉店','晚餐|10/29 後才能訂位',M('Pw9SJCykKFTgMGAm7')]]],
 ['📍 景點',[['旦過市場','營業 10:00-17:00,早餐/蔬果',M('Lq9FYqHQx8wYTveN8')],['魚町銀天街','',M('XzKHNh1jyQGvSYbc6')],['小倉城','',M('1EbdNQVBZ4eUP9J99')]]],
 ['🛒 購物/超市',[['youme 超市 小倉','營業 9:00-22:00',M('C7rmrhL5nqZJ41239')],['SAINTcity Shopping Mall','營業 10:00-22:00',M('7EjcaY3LUY7Zu5hZA')]]]]},
-{id:'d2',tab:'11/27 門司港',c:[3,'小基','出發囉!今天要開車!燒咖哩、關門大橋、皿倉山夜景都要看!'],t:'11/27(五) 下關・門司港一日遊',r:['飯店早餐','9:00 出發租車(預約 9:30)','門司港','燒咖哩午餐','懷舊展望室/和布刈神社/下關(看情況)','16:00 皿倉山看日落','回小倉吃肉'],
+{id:'d2',tab:'11/27 門司港',c:[0,'凱凱','出發囉!今天要開車!燒咖哩、關門大橋、皿倉山夜景都要看!'],t:'11/27(五) 下關・門司港一日遊',r:['飯店早餐','9:00 出發租車(預約 9:30)','門司港','燒咖哩午餐','懷舊展望室/和布刈神社/下關(看情況)','16:00 皿倉山看日落','回小倉吃肉'],
 S:[['🚗 交通',[['ART新田川小倉酒店 → AVIS Budget 租車','',M('V8PqNJVGe9jcUKtc8')],['租車資訊','',M('qfnZQWAMLQUPs2Df8')],['皿倉山纜車:山麓站 → 山上站','去程末班 19:20,回程末班 20:00,約 20 分鐘一班','https://www.sarakurayama-cablecar.co.jp/timetable/']]],
 ['🍴 餐廳',[['プリンセスピピ門司港 燒咖哩','午餐',M('eevG3VEVyjNnG7eQ8')],['ミツバチカレー 燒咖哩','午餐|備案',M('Tx7n3H2SFj4dVCgq7')],['kuu coffee','可以眺望門司港',M('fQ2jynrXBPXE27a37')],['小倉個室焼肉 赤鞘','晚餐',M('59SwRCGN4xNPPgyy6')]]],
 ['📍 景點',[['門司港懷舊','',M('LL4TH1LAZ2BmFhHy5')],['門司港懷舊展望室','31F 整面海景,門票約 $120',M('UrQWAvsLQhVvo5QH9')],['和布刈神社','關門大橋最佳景點',M('o9HmkfVo8dWVj1su7')],['皿倉山','看夜景;開車到山麓站停車,再轉纜車/斜面單軌車上山',M('DvHq4cSKDNQELSZJ8')]]],
 ['🛒 購物',[['THE OUTLETS KITAKYUSHU','營業 10:00-20:00,下山後有體力再逛|備案',M('kqRXwqwM1MZcA6uR8')]]]]},
-{id:'d3',tab:'11/28 別府',c:[1,'小紗','哇~溫泉的蒸氣好暖和…布丁也想吃!'],t:'11/28(六) 前往溫泉區・別府一日遊',r:['飯店早餐','9:00 出發別府','海地獄/灶地獄','天婦羅午餐','志高湖','沿途山景','由布院 check in(15:00-18:00)','宇奈岐日女神社','超市(買隔天早餐)','居酒屋或大阪燒'],
+{id:'d3',tab:'11/28 別府',c:[3,'毛茲','哇~溫泉的蒸氣好暖和…布丁也想吃!'],t:'11/28(六) 前往溫泉區・別府一日遊',r:['飯店早餐','9:00 出發別府','海地獄/灶地獄','天婦羅午餐','志高湖','沿途山景','由布院 check in(15:00-18:00)','宇奈岐日女神社','超市(買隔天早餐)','居酒屋或大阪燒'],
 S:[['🍴 餐廳',[['天丼 とよ常本店','午餐',M('LnCbmTxosD4UqTVn8')],['大分 地獄プリン工房','點心,似乎是很強大的布丁',M('JnSB9jYxL5CA3M3t5')],['Tama 居酒屋','晚餐,茶碗蒸看起來超好吃',M('Jp12tomuQdBiXmVg6')],['てっぱん焼 由布庵 大阪燒','晚餐|備案',M('AADRtbV4H5RxCzaK8')]]],
 ['📍 景點',[['海地獄/灶地獄','周邊是地獄溫泉區',M('aozQXQC2gQ1EcQFQ8')],['志高湖','',M('F39KgqjDjia9nYNJ7')],['宇奈岐日女神社','',M('zfJNRv9fMSz6PCF7A')]]],
 ['🛒 超市',[['Maxvalu 湯布院','營業 9:00-22:00',M('hfTVhCNpU4EgNdFD8')],['A-COOP 湯布院店','營業 10:00-19:00',M('mHDWGTc2C5kEDKuo7')]]]]},
-{id:'d4',tab:'11/29 由布院',c:[2,'小松','最後一天了,慢慢逛、慢慢吃,記得 18:00 前還車喔!'],t:'11/29(日) 由布院慢活 & 返台',r:['7:00 清晨金鱗湖','10:00 退房(車可停到 14:00)','湯之坪街道','金鱗湖旁午餐','看天氣去狹霧台','15:00 前出發回小倉','18:00 還車','寄放行李','晚餐牛舌/拉麵','21:00 Uber 去機場(21:50 check-in)'],
+{id:'d4',tab:'11/29 由布院',c:[4,'小語','最後一天了,慢慢逛、慢慢吃,記得 18:00 前還車喔!'],t:'11/29(日) 由布院慢活 & 返台',r:['7:00 清晨金鱗湖','10:00 退房(車可停到 14:00)','湯之坪街道','金鱗湖旁午餐','看天氣去狹霧台','15:00 前出發回小倉','18:00 還車','寄放行李','晚餐牛舌/拉麵','21:00 Uber 去機場(21:50 check-in)'],
 S:[['🧳 交通/行李',[['小倉站行李寄放','用 ecbo cloak 預約','https://cloak.ecbo.io']]],
 ['🍴 餐廳',[['中津からあげ 吉吾 湯布院店','炸雞!',M('AFEBXca7zqSuzAUm7')],['日本茶 5toku','抹茶專賣店',M('3YmMdZ5FHmxvYiWg8')],['由布院 Milch','布丁、半熟起司蛋糕',M('fUrArWc7QWuiN9Bv6')],['鞠智 cucuchi','銅鑼燒和咖啡館',M('GDMWtLRgCW635ZKj6')],['龜之井別莊 湯之岳庵','午餐,懷石料理,也有鰻魚飯/牛排飯',M('JXXyyBeeTZuA3yyR8')],['由布釜飯「心」湯布院站前店','午餐|備案,比較需要排隊,飯比較濕潤',M('CFKt7aPgLxWM7c9k7')],['さるたひこ 拉麵','晚餐',M('iLoRFkitStguRpjy9')],['牛たん炭焼 利久 小倉店','晚餐|備案',M('mv9YKz8S5sxYCnwt7')]]],
 ['📍 景點',[['金鱗湖','清晨先看一眼',M('dDmTgfnQrMv5ruuk7')],['湯之坪街道','各式小點心/咖啡廳',M('AGMb5opg4STkohHj6')],['狹霧台','山景,看天氣/時間再決定',M('s5auxhLqeysxiDp37')]]]]}];
@@ -78,7 +78,14 @@ const AV=[
 `<circle cx="14" cy="32" r="9" fill="#d98b43"/><circle cx="50" cy="32" r="9" fill="#d98b43"/><circle cx="19" cy="18" r="8" fill="#d98b43"/><circle cx="45" cy="18" r="8" fill="#d98b43"/><circle cx="32" cy="13" r="8" fill="#d98b43"/><ellipse cx="32" cy="38" rx="20" ry="18" fill="#e9ab66"/><ellipse cx="32" cy="52" rx="4" ry="5" fill="#8a96dc"/>${F(34)}`,
 `<path d="M10 36L8 6L29 21Z" fill="#f2a541"/><path d="M54 36L56 6L35 21Z" fill="#f2a541"/><ellipse cx="32" cy="40" rx="23" ry="18" fill="#f2a541"/><ellipse cx="32" cy="48" rx="13" ry="8" fill="#fff6e6" stroke="none"/><ellipse cx="32" cy="31" rx="4" ry="7" fill="#fff6e6" stroke="none"/>${F(37)}`,
 `<path d="M12 20Q2 34 8 54Q19 52 21 30Z" fill="#e0a229"/><path d="M52 20Q62 34 56 54Q45 52 43 30Z" fill="#e0a229"/><ellipse cx="32" cy="38" rx="21" ry="19" fill="#f6c453"/><ellipse cx="32" cy="46" rx="10" ry="7" fill="#fff0c2" stroke="none"/><path d="M30 49Q32 58 34 49Z" fill="#ff8f9a"/>${F(35)}`];
-const mk=(i,s=56)=>`<svg viewBox="0 0 64 64" width="${s}" height="${s}" fill="none" stroke="#4d3a10" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><g filter="url(#wob)">${AV[i]}</g></svg>`;
+const Fc=y=>`<circle cx='25' cy='${y}' r='2.3' fill='#4d3a10' stroke='none'/><circle cx='39' cy='${y}' r='2.3' fill='#4d3a10' stroke='none'/><ellipse cx='20' cy='${y+5}' rx='3.5' ry='2.2' fill='#ff8f7a' opacity='.6' stroke='none'/><ellipse cx='44' cy='${y+5}' rx='3.5' ry='2.2' fill='#ff8f7a' opacity='.6' stroke='none'/><path d='M29 ${y+6}Q32 ${y+9} 35 ${y+6}'/>`;
+const AP=[
+`<path d='M8 64Q9 47 32 47Q55 47 56 64Z' fill='#7aa6d6'/><ellipse cx='32' cy='30' rx='22' ry='22' fill='#3b2f2f'/><path d='M10 30Q7 48 16 53L21 36Z' fill='#3b2f2f'/><path d='M54 30Q57 48 48 53L43 36Z' fill='#3b2f2f'/><ellipse cx='32' cy='35' rx='16' ry='14' fill='#ffe0c2'/><path d='M15 29Q21 15 32 17Q43 15 49 29Q41 22 32 25Q23 22 15 29Z' fill='#3b2f2f'/>${Fc(36)}`,
+`<path d='M8 64Q9 47 32 47Q55 47 56 64Z' fill='#f4ead8'/><ellipse cx='32' cy='30' rx='23' ry='22' fill='#d9692e'/><path d='M9 30Q3 50 13 58Q18 52 20 38Z' fill='#d9692e'/><path d='M55 30Q61 50 51 58Q46 52 44 38Z' fill='#d9692e'/><ellipse cx='32' cy='35' rx='16' ry='14' fill='#ffe0c2'/><path d='M15 30Q20 15 32 17Q44 15 49 30Q41 22 32 26Q23 22 15 30Z' fill='#d9692e'/>${Fc(36)}`,
+`<path d='M8 64Q9 47 32 47Q55 47 56 64Z' fill='#2f9a5a'/><ellipse cx='32' cy='31' rx='21' ry='20' fill='#4a3a33'/><path d='M11 32Q9 44 16 46L21 36Z' fill='#4a3a33'/><path d='M53 32Q55 44 48 46L43 36Z' fill='#4a3a33'/><ellipse cx='32' cy='36' rx='16' ry='14' fill='#ffe0c2'/><path d='M15 33Q16 17 32 17Q48 17 49 33Q41 24 32 25Q23 24 15 33Z' fill='#4a3a33'/>${Fc(37)}`,
+`<circle cx='13' cy='17' r='8' fill='#f2b01e'/><circle cx='51' cy='17' r='8' fill='#f2b01e'/><ellipse cx='32' cy='34' rx='23' ry='20' fill='#f2b01e'/><ellipse cx='32' cy='42' rx='10' ry='7' fill='#ffd97a' stroke='none'/><circle cx='22' cy='31' r='2' fill='#4d3a10' stroke='none'/><circle cx='42' cy='31' r='2' fill='#4d3a10' stroke='none'/><ellipse cx='32' cy='38' rx='4.5' ry='3' fill='#4d3a10'/><path d='M27 44Q32 48 37 44'/><path d='M12 53Q32 63 52 53L54 61Q32 71 10 61Z' fill='#d93a3a'/>`,
+`<ellipse cx='32' cy='35' rx='21' ry='19' fill='#f1dfc4'/><path d='M16 15Q2 18 4 40Q6 57 18 52Q21 38 21 22Z' fill='#d9bf98'/><path d='M48 15Q62 18 60 40Q58 57 46 52Q43 38 43 22Z' fill='#d9bf98'/><ellipse cx='32' cy='43' rx='9' ry='6' fill='#fbf2e1' stroke='none'/><circle cx='24' cy='32' r='2' fill='#4d3a10' stroke='none'/><circle cx='40' cy='32' r='2' fill='#4d3a10' stroke='none'/><ellipse cx='32' cy='39' rx='3.5' ry='2.4' fill='#4d3a10'/><path d='M32 41V44M32 44Q29 47 26 45M32 44Q35 47 38 45'/><path d='M13 53Q32 62 51 53L53 61Q32 70 11 61Z' fill='#b8323a'/><path d='M22 58V66M32 60V68M42 58V66' stroke='#3a1a1a' stroke-width='1.5'/>`];
+const mk=(i,s=56)=>`<svg viewBox="0 0 64 64" width="${s}" height="${s}" fill="none" stroke="#4d3a10" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">${AP[i]}</svg>`;
 const H={d1:'旦過市場・小倉城・牛腸鍋',d2:'燒咖哩・關門大橋・皿倉山夜景',d3:'地獄溫泉・志高湖・居酒屋',d4:'金鱗湖・湯之坪街道・返台'};
 const TD=['10/29 後預約牛腸鍋田州(小倉晚餐)','填寫 Visit Japan Web','下載 JPrefund(退稅)','設定 eSIM','確認 AVIS 租車(11/27 9:30)','準備駕照 + 日文譯本'];
 const sayBox=(i,n,t)=>`<div class="say"><span class="av">${mk(i,64)}</span><div><b>${n}</b><br>${t}</div></div>`;
@@ -97,21 +104,36 @@ function tips(){return `<div class="card"><h2>🛬 入境</h2><div class="item">
 <div class="card"><h2>📶 eSIM</h2><small>到日本再掃描啟用,使用說明截圖在 Notion。</small></div>
 <div class="card"><h2>🛍️ 退稅</h2><small>下載「JPrefund」App,退稅步驟截圖在 Notion。</small></div>
 <div class="card"><h2>🚗 開車提醒</h2><ul><li>11/27 9:30 AVIS 取車,11/29 18:00 前還車</li><li>帶護照、駕照、日文譯本</li><li>11/29 由布院退房後車可停到 14:00</li></ul></div>`}
-const T=[['ov','🏠 總覽'],...D.map(d=>[d.id,d.tab]),['pack','🎒 行李'],['tips','📝 小抄']];
+const T=[['ov','🏠 總覽'],...D.map(d=>[d.id,d.tab]),['pack','🎒 行李'],['cash','💴 記帳'],['chk','🛃 檢疫'],['tips','📝 小抄']];
 const nav=document.getElementById('nav'),v=document.getElementById('v');
 nav.innerHTML=T.map(([k,n])=>`<button data-go="${k}">${n}</button>`).join('');
 function show(k){if(!T.some(t=>t[0]===k))k='ov';const d=D.find(x=>x.id===k);
-const P={ov:[4,'小金','歡迎來九州!先看看四天重點,再把待辦一項一項勾掉吧。'],pack:[0,'小柴','出門前一項一項勾,別忘了護照和駕照喔!'],tips:[2,'小松','入境、網路、退稅,先在這裡看一遍就不慌了。']};v.innerHTML=(P[k]?sayBox(...P[k]):'')+(k==='ov'?ov():d?day(d):k==='pack'?pack():tips());
+const P={ov:[2,'月裕','歡迎來九州!先看看四天重點,再把待辦一項一項勾掉吧。'],pack:[0,'凱凱','出門前一項一項勾,別忘了護照和駕照喔!'],cash:[4,'小語','每筆消費當場記下來,回國分帳就輕鬆!'],chk:[3,'毛茲','買伴手禮前先查一下,別讓美食被沒收喔!'],tips:[1,'魚子','入境、網路、退稅,先在這裡看一遍就不慌了。']};v.innerHTML=(P[k]?sayBox(...P[k]):'')+(k==='ov'?ov():d?day(d):k==='pack'?pack():k==='cash'?cash():k==='chk'?chk():tips());
 nav.querySelectorAll('button').forEach(b=>{const on=b.dataset.go===k;b.classList.toggle('on',on);if(on)b.scrollIntoView({inline:'center',block:'nearest'})});
-if(k==='pack')pstat();try{history.replaceState(null,'','#'+k)}catch(e){}window.scrollTo(0,0)}
+if(k==='pack')pstat();if(k==='cash')xr();if(k==='chk')cf();try{history.replaceState(null,'','#'+k)}catch(e){}window.scrollTo(0,0)}
 document.addEventListener('click',e=>{const g=e.target.closest('[data-go]');if(g)show(g.dataset.go)});
 document.addEventListener('change',e=>{const k=e.target.dataset.k;if(!k)return;let s={};try{s=JSON.parse(localStorage.getItem('pk')||'{}');s[k]=e.target.checked;localStorage.setItem('pk',JSON.stringify(s))}catch(x){}pstat()});
+const MB=['魚子','凱凱','月裕'],esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const ld=()=>{try{return JSON.parse(localStorage.getItem('ex')||'[]')}catch(e){return[]}},sv=x=>{try{localStorage.setItem('ex',JSON.stringify(x))}catch(e){}},lr=()=>{try{return localStorage.getItem('rt')||'0.21'}catch(e){return'0.21'}};
+let LT='';
+function cash(){return `<div class='card f'><h2>新增消費</h2><input id='xn' placeholder='項目(例如 午餐)'><input id='xa' type='number' inputmode='numeric' placeholder='金額(日圓)'><label>付款人</label><select id='xp'>${MB.map(m=>`<option>${m}</option>`).join('')}</select><div id='xs' style='margin-top:6px'><small>分攤者</small><br>${MB.map(m=>`<label><input type='checkbox' value='${m}' checked>${m}</label>`).join('')}</div><button class='go' data-act='add' style='margin-top:8px'>記下來</button> <small id='xm'></small></div><div class='card f'><label>匯率:1 日圓 ≈ NT$</label><input id='xr' type='number' step='0.001' value='${lr()}'><small>匯率請依實際刷卡或換匯情況自行修改。記帳資料只存在這支手機的瀏覽器裡。</small></div><div id='xl'></div>`}
+function xr(){const X=ld(),rt=+lr()||0,T$=Math.round(X.reduce((s,e)=>s+e.a,0)),b={},pd={};MB.forEach(m=>{b[m]=0;pd[m]=0});X.forEach(e=>{b[e.p]+=e.a;pd[e.p]+=e.a;e.s.forEach(m=>b[m]-=e.a/e.s.length)});const cr=MB.filter(m=>b[m]>.5).map(m=>[m,b[m]]),db=MB.filter(m=>b[m]<-.5).map(m=>[m,-b[m]]),tr=[];let i=0,j=0;while(i<db.length&&j<cr.length){const x=Math.min(db[i][1],cr[j][1]);tr.push([db[i][0],cr[j][0],x]);db[i][1]-=x;cr[j][1]-=x;if(db[i][1]<.5)i++;if(cr[j][1]<.5)j++}
+const nt=y=>'NT$'+Math.round(y*rt).toLocaleString(),yn=y=>'¥'+Math.round(y).toLocaleString();
+LT='日本旅費結算(合計 '+yn(T$)+'):'+(tr.map(t=>t[0]+' 付給 '+t[1]+' '+yn(t[2])+'('+nt(t[2])+')').join('、')||'不用互相轉帳');
+document.getElementById('xl').innerHTML=`<div class='card'><h2>結算</h2><div class='big'>${yn(T$)} <small>≈ ${nt(T$)}</small></div>${MB.map(m=>`<div class='item'><div><b>${m}</b><small>先付 ${yn(pd[m])}</small></div><b>${b[m]>=0?'可收 ':'要付 '}${yn(Math.abs(b[m]))}</b></div>`).join('')}${tr.length?'<h2 style="margin-top:10px">誰轉給誰</h2>'+tr.map(t=>`<div class='item'><b>${t[0]} → ${t[1]}</b><b>${yn(t[2])} <small>(${nt(t[2])})</small></b></div>`).join(''):''}<button class='go' data-act='copy'>複製結算文字</button></div><div class='card'><h2>明細(${X.length})</h2>${X.length?X.map((e,i)=>`<div class='item'><div><b>${esc(e.n)}</b><small>${e.p} 付・分攤:${e.s.join('、')}</small></div><div style='text-align:right'><b>${yn(e.a)}</b><br><button class='go' data-del='${i}'>刪除</button></div></div>`).reverse().join(''):'<small>還沒有紀錄</small>'}</div>`}
+const CK=[['半熟蛋、溫泉蛋、溏心蛋','n','日本屬禽流感疫區,蛋類有疫病風險'],['火腿腸、香腸、臘腸、培根','n','肉製品,是常見違規品項'],['牛肉乾、肉乾','n','肉製品,是常見違規品項'],['含肉塊的拉麵、即食調理包、真空包裝肉品','n','即使真空包裝也不行'],['雞皮、燒肉便當','n','動物產品'],['含肉的寵物食品','n','動物產品'],['豬肉製品','n','違規可能被處高額罰款'],['新鮮水果、蔬菜','q','多數受限,請先查官方規定再決定'],['魚子醬、醃漬鮭魚卵等水產品','y','報導指可攜帶,仍建議主動申報']];
+function chk(){return `<div class='card'><h2>入境台灣檢疫小幫手</h2><small>輸入商品或食物名稱查查看。內容整理自防檢署公告與新聞報導,只列常見品項,規定可能更新,最終以官方公告和入境檢疫櫃檯為準。</small></div><div class='card f'><input id='cq' placeholder='輸入關鍵字,例如 蛋、香腸、水果'><div id='cl'></div></div><div class='card'>${a('https://www.aphia.gov.tw/','前往動植物防疫檢疫署官網')}<br><small>https://www.aphia.gov.tw/</small></div>`}
+function cf(){const q=document.getElementById('cq').value.trim(),S={n:['不可帶','#d9534f'],y:['可帶,建議申報','#4d9a2a'],q:['需確認','#c97a00']},l=CK.filter(r=>!q||r[0].includes(q)||r[2].includes(q));document.getElementById('cl').innerHTML=l.length?l.map(r=>`<div class='item'><div><b>${r[0]}</b><small>${r[2]}</small></div><span class='tag' style='background:${S[r[1]][1]};color:#fff'>${S[r[1]][0]}</span></div>`).join(''):'<small>清單裡沒有這項。不確定就到入境前的動植物檢疫櫃檯詢問或主動申報。</small>'}
+document.addEventListener('click',e=>{const t=e.target.closest('[data-act],[data-del]');if(!t)return;if(t.dataset.del!==undefined){const X=ld();X.splice(+t.dataset.del,1);sv(X);xr();return}
+if(t.dataset.act==='add'){const g=id=>document.getElementById(id),n=g('xn').value.trim()||'消費',a=Math.round(+g('xa').value),p=g('xp').value,s=[...document.querySelectorAll('#xs input:checked')].map(i=>i.value);if(!(a>0)||!s.length){g('xm').textContent='請輸入金額並至少選一位分攤者';return}g('xm').textContent='';const X=ld();X.push({n,a,p,s});sv(X);g('xn').value='';g('xa').value='';xr()}
+if(t.dataset.act==='copy'){try{navigator.clipboard.writeText(LT);t.textContent='已複製'}catch(x){}}});
+document.addEventListener('input',e=>{if(e.target.id==='xr'){try{localStorage.setItem('rt',e.target.value)}catch(x){}xr()}if(e.target.id==='cq')cf()});
 document.getElementById('th').onclick=()=>{const r=document.documentElement,dk=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;r.dataset.theme=dk?'light':'dark'};
 function tick(){const n=new Date();document.getElementById('jp').textContent='🕒 日本現在 '+n.toLocaleTimeString('zh-TW',{timeZone:'Asia/Tokyo',hour:'2-digit',minute:'2-digit',hour12:false});
 const dep=Date.UTC(2026,10,25,19,0),ms=dep-n,c=document.getElementById('cd');
 c.textContent=ms>0?'⏳ 距離出發 '+Math.ceil(ms/864e5)+' 天':'🌸 旅途進行中';}
 tick();setInterval(tick,30000);
 const h=location.hash.slice(1);let st='ov';if(h)st=h;else{const j=new Date(Date.now()+(9*60-new Date().getTimezoneOffset()*-1)*0).toLocaleDateString('en-CA',{timeZone:'Asia/Tokyo'});const m={'2026-11-26':'d1','2026-11-27':'d2','2026-11-28':'d3','2026-11-29':'d4'};if(m[j])st=m[j]}
-document.getElementById('mh').innerHTML=['小柴','小紗','小松','小基','小金'].map((n,i)=>`<span>${mk(i,52)}<small>${n}</small></span>`).join('');
+document.getElementById('mh').innerHTML=[1,0,2,3,4].map(i=>[i,['凱凱','魚子','月裕','毛茲','小語'][i]]).map(([i,n])=>`<span>${mk(i,52)}<small>${n}</small></span>`).join('');
 show(st);
 </script></body></html>
